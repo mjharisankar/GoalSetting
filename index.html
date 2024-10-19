@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goal Setting Prompts</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Goal Setting Prompts</h1>
+        <div id="prompt-container">
+            <p id="prompt">Click the button to receive your first goal-setting prompt!</p>
+            <textarea id="response" rows="4" placeholder="Type your response here..."></textarea>
+            <button id="submitBtn" onclick="saveResponse()">Submit Response</button>
+        </div>
+        <button id="nextPromptBtn" onclick="getNextPrompt()">Next Prompt</button>
+        <button id="viewResponsesBtn" onclick="viewResponses()">View Saved Responses</button>
+        <div id="savedResponses"></div>
+        <button id="downloadPdfBtn" onclick="downloadPdf()" style="display:none;">Download Responses as PDF</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
